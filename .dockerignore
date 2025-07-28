@@ -1,0 +1,29 @@
+# VCS, editor, OS cruft
+.git
+.gitignore
+.vscode
+.idea
+.DS_Store
+
+# Python build & cache
+**/__pycache__/
+**/*.py[cod]
+*.egg-info/
+.dist/
+.build/
+
+# Poetry virtualenvs if someone created one locally
+.poetry/
+
+# Notebooks & outputs you don’t need in the image
+notebook/*-checkpoint.ipynb
+**/.ipynb_checkpoints/
+
+# Data / models that you mount or download at runtime
+data/
+artifacts/
+models/
+
+# Secrets
+.env
+*.pem

@@ -1,0 +1,24 @@
+{
+    "name": "BuffConf Workshop",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+
+    "containerEnv": { "ASSET_VERSION": "20250725" },
+    "onCreateCommand": "/bin/bash scripts/fetch-assets.sh",
+
+    "hostRequirements": {"cpus": 4, "memory": "8gb"},
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.jupyter-renderers",
+                "ms-toolsai.jupyter-keymap",
+                "charliermarsh.ruff"
+            ]
+        }
+    }
+}
