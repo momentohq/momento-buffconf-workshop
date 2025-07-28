@@ -5,7 +5,7 @@
         "context": ".."
     },
 
-    "containerEnv": { "ASSET_VERSION": "20250725" },
+    "containerEnv": { "ASSET_VERSION": "20250728" },
     "onCreateCommand": "/bin/bash scripts/fetch-assets.sh",
 
     "hostRequirements": {"cpus": 4, "memory": "8gb"},
